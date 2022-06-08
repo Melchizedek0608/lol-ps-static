@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="statistics.css">
 </head>
 <body>
-    <!-- 위에 navbar 부분입니다 -->
     <header class="header-mainnav">
         <div class="header-container">
-            <a href="../main/main.html">
+            <a href="/">
                 <img src="../Images/header-logo.webp" alt="LOL.PS">
             </a>
             <div class = "nav-item-container">
-            	<a class="nav-items" href="../notice/notice.html">공지사항</a>
-                <a class="nav-items" href="../rank/rank.html">챔피언 랭킹</a>
-                <a class="nav-items" href="../community/build.html">빌드게시판</a>
-                <a class="nav-items" href="../community/free.html">자유게시판</a>
+                <a class="nav-items" href="/notice">공지사항</a>
+                <a class="nav-items" href="/champ/rank">챔피언 랭킹</a>
+                <button class="nav-items">커뮤니티</button>
+                <button class="nav-items">PS 연구실</button>
+                <button class="nav-items">상대법 검색</button>
             </div>
             <div class="sign-login">
                 <button class="signin">회원가입</button>
-                <a class="login" href="../login/login.html">로그인</a>
+                <a href="../login/login.html">
+                    <button class="login">로그인</button>
+                </a>
             </div>
         </div>
     </header>
@@ -47,20 +49,29 @@
                 <div class="line-and-input">
                     <div class="select-line">
                         <button class="line-button button-active" style="border-radius: 6px 0px 0px 6px;">
-                            <i></i> 
+                            <img src="line-top.png" alt="img">
                             <span>탑</span>
+                            <span>84.0%</span>
                         </button>
                         <button class="line-button">
-                            정글
-                        </button>
-                        <button class="line-button button-active">
-                            미드
+                            <img src="line-jun.png" alt="img">
+                            <span>정글</span>
+                            <span>1.7%</span>
                         </button>
                         <button class="line-button">
-                            원딜
+                            <img src="line-mid.png" alt="img">
+                            <span>미드</span>
+                            <span>13.3%</span>
+                        </button>
+                        <button class="line-button">
+                            <img src="line-bot.png" alt="img">
+                            <span>원딜</span>
+                            <span>0.5%</span>
                         </button>
                         <button class="line-button" style="border-radius: 0px 6px 6px 0px; border-right: none;">
-                            서폿
+                            <img src="line-sup.png" alt="img">
+                            <span>서폿</span>
+                            <span>0.4%</span>
                         </button>
                     </div>
                     <div class="input-box">
@@ -77,7 +88,7 @@
                     <div class="head">
                         <img src="../Images/neeko.png" alt="img">
                     </div>
-                    <h1 style="font-weight: 400; font-size: 38px; margin: 15px 0px 0px 190px; width:100%;">트위스티드페이트</h1>
+                    <h1 style="font-weight: 400; font-size: 38px; margin: 0; width:100%; margin-top: 15px; margin-left: 190px;">트위스티드 페이트</h1>
                 </div>
                 <button class="summary-button summary-button-active">대중적인 빌드</button>
                 <button class="summary-button" style="left: 33%;">고승률 빌드</button>
