@@ -1,5 +1,9 @@
 * { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
 
+main {
+	margin:auto;
+}
+
 body {
 	position: relative;
     height: auto;
