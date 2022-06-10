@@ -15,7 +15,7 @@
     <script>
     	$(function() {
     		//프로필 설정
-    		$(".change-img div.anne").hover(function() {
+    		$(".change-img div.profile-settings").hover(function() {
     			//$(this).find("img:first-child").css('display','none');
     			//$(this).find("img").eq(2).css('display','block');
     			//$(this).find("div").css('display','block');
@@ -43,14 +43,279 @@
     			$(this).find("img").eq(2).animate({opacity:0});  //.css('opacity','0');
     		});
     		//한줄소개변경
-    		$("#introduce-btn").click(function() {
-    			
-    		});
+    		$("#btn-save-id").click(function() {
+    	   		var text = $("#introduce-modal-insert-id").val();
+    	    	$("#introduce-text").html(text);
+    	    	alert("한줄소개가 변경되었습니다.");
+    	    });
     		
+    		$("#btn-save-id2").click(function() {
+    	    	alert("비밀번호가 변경되었습니다.");
+    	    });
+    		
+    		$("#btn-save-id3").click(function() {
+    	    	alert("회원탈퇴 완료.");
+    	    });
+    		
+    		$('#introduce-modal-id').animate({opacity:0},25);
+    		$('#change-pw-modal-id').animate({opacity:0},25);
+    		$('#member-secession-modal-id').animate({opacity:0},25);
+    		
+    		$("#introduce-btn").click(function() {
+    			$('#fake-body').animate({opacity:0.7},25);
+    			$('#introduce-modal-id').animate({opacity:1});
+    			
+    			$('.background-gray').removeClass('modal-del');
+    			$('.background-gray').addClass('modal-show');
+    			$('html, body').addClass('modal-body');
+    			
+    			$('#introduce-modal-id').css({
+					"margin-top" : (($(window).height() - $('#introduce-modal-id').outerHeight())/2 + $(window).scrollTop()) + "px",
+					"margin-left" : (($(window).width() - $('#introduce-modal-id').outerWidth())/2 + $(window).scrollLeft()) + "px"
+					});
+    			
+    			$('.background-gray').click(function(e) {
+    				if(e.target.id === 'background-gray-id') {
+    					$('#fake-body').animate({opacity:1});
+    					$('#introduce-modal-id').animate({opacity:0},25);
+    					$('.background-gray').removeClass('modal-show');
+    					$('.background-gray').addClass('modal-del');
+    					
+    					$('html, body').removeClass('modal-body');
+    					$('#element').off('scroll touchmove mousewheel', function(event) {
+    		    			event.preventDefault();
+    		    			event.stopPropagation();
+    		    			return false;
+    		    		});
+    				}
+    			});
+    			$('.introduce-modal-btn').click(function(e) {
+    				if(e.target.id === 'introduce-modal-btn-id') {
+    					$('#fake-body').animate({opacity:1});
+    					$('#introduce-modal-id').animate({opacity:0},25);
+    					$('.background-gray').removeClass('modal-show');
+    					$('.background-gray').addClass('modal-del');
+    					
+    					$('html, body').removeClass('modal-body');
+    					$('#element').off('scroll touchmove mousewheel', function(event) {
+    		    			event.preventDefault();
+    		    			event.stopPropagation();
+    		    			return false;
+    		    		});
+    				}
+    			});
+    			$('.btn-save').click(function(e) {
+    				if(e.target.id === 'btn-save-id') {
+    					$('#fake-body').animate({opacity:1});
+    					$('#introduce-modal-id').animate({opacity:0},25);
+    					$('.background-gray').removeClass('modal-show');
+    					$('.background-gray').addClass('modal-del');
+    					
+    					$('html, body').removeClass('modal-body');
+    					$('#element').off('scroll touchmove mousewheel', function(event) {
+    		    			event.preventDefault();
+    		    			event.stopPropagation();
+    		    			return false;
+    		    		});
+    				}
+    			});
+    			
+    			$('#element').on('scroll touchmove mousewheel', function(event) {
+    			  event.preventDefault();
+    			  event.stopPropagation();
+    			  return false;
+    			});
+    		});
+    		// 비밀번호 변경
+    		$("#change-pw-btn").click(function() {
+    			$('#fake-body').animate({opacity:0.7},25);
+    			$('#change-pw-modal-id').animate({opacity:1});
+    			
+    			$('.background-gray2').removeClass('modal-del');
+    			$('.background-gray2').addClass('modal-show');
+    			$('html, body').addClass('modal-body');
+    			
+    			$('#change-pw-modal-id').css({
+					"margin-top" : (($(window).height() - $('#change-pw-modal-id').outerHeight())/2 + $(window).scrollTop()) + "px",
+					"margin-left" : (($(window).width() - $('#change-pw-modal-id').outerWidth())/2 + $(window).scrollLeft()) + "px"
+					});
+    			
+    			$('.background-gray2').click(function(e) {
+    				if(e.target.id === 'background-gray-id2') {
+    					$('#fake-body').animate({opacity:1});
+    					$('#change-pw-modal-id').animate({opacity:0},25);
+    					$('.background-gray2').removeClass('modal-show');
+    					$('.background-gray2').addClass('modal-del');
+    					
+    					$('html, body').removeClass('modal-body');
+    					$('#element').off('scroll touchmove mousewheel', function(event) {
+    		    			event.preventDefault();
+    		    			event.stopPropagation();
+    		    			return false;
+    		    		});
+    				}
+    			});
+    			$('.change-pw-modal-btn').click(function(e) {
+    				if(e.target.id === 'change-pw-modal-btn-id') {
+    					$('#fake-body').animate({opacity:1});
+    					$('#change-pw-modal-id').animate({opacity:0},25);
+    					$('.background-gray2').removeClass('modal-show');
+    					$('.background-gray2').addClass('modal-del');
+    					
+    					$('html, body').removeClass('modal-body');
+    					$('#element').off('scroll touchmove mousewheel', function(event) {
+    		    			event.preventDefault();
+    		    			event.stopPropagation();
+    		    			return false;
+    		    		});
+    				}
+    			});
+    			$('#btn-save-id2').click(function(e) {
+    				if(e.target.id === 'btn-save-id2') {
+    					$('#fake-body').animate({opacity:1});
+    					$('#change-pw-modal-id').animate({opacity:0},25);
+    					$('.background-gray2').removeClass('modal-show');
+    					$('.background-gray2').addClass('modal-del');
+    					
+    					$('html, body').removeClass('modal-body');
+    					$('#element').off('scroll touchmove mousewheel', function(event) {
+    		    			event.preventDefault();
+    		    			event.stopPropagation();
+    		    			return false;
+    		    		});
+    				}
+    			});
+    			
+    			$('#element').on('scroll touchmove mousewheel', function(event) {
+    			  event.preventDefault();
+    			  event.stopPropagation();
+    			  return false;
+    			});
+    		});
+    		//회원탈퇴
+    		$("#member-secession-btn").click(function() {
+    			$('#fake-body').animate({opacity:0.7},25);
+    			$('#member-secession-modal-id').animate({opacity:1});
+    			
+    			$('.background-gray3').removeClass('modal-del');
+    			$('.background-gray3').addClass('modal-show');
+    			$('html, body').addClass('modal-body');
+    			
+    			$('#member-secession-modal-id').css({
+					"margin-top" : (($(window).height() - $('#member-secession-modal-id').outerHeight())/2 + $(window).scrollTop()) + "px",
+					"margin-left" : (($(window).width() - $('#member-secession-modal-id').outerWidth())/2 + $(window).scrollLeft()) + "px"
+					});
+    			
+    			$('.background-gray3').click(function(e) {
+    				if(e.target.id === 'background-gray-id3') {
+    					$('#fake-body').animate({opacity:1});
+    					$('#member-secession-modal-id').animate({opacity:0},25);
+    					$('.background-gray3').removeClass('modal-show');
+    					$('.background-gray3').addClass('modal-del');
+    					
+    					$('html, body').removeClass('modal-body');
+    					$('#element').off('scroll touchmove mousewheel', function(event) {
+    		    			event.preventDefault();
+    		    			event.stopPropagation();
+    		    			return false;
+    		    		});
+    				}
+    			});
+    			$('.member-secession-modal-btn').click(function(e) {
+    				if(e.target.id === 'member-secession-modal-btn-id') {
+    					$('#fake-body').animate({opacity:1});
+    					$('#member-secession-modal-id').animate({opacity:0},25);
+    					$('.background-gray3').removeClass('modal-show');
+    					$('.background-gray3').addClass('modal-del');
+    					
+    					$('html, body').removeClass('modal-body');
+    					$('#element').off('scroll touchmove mousewheel', function(event) {
+    		    			event.preventDefault();
+    		    			event.stopPropagation();
+    		    			return false;
+    		    		});
+    				}
+    			});
+    			$('#btn-save-id3').click(function(e) {
+    				if(e.target.id === 'btn-save-id3') {
+    					$('#fake-body').animate({opacity:1});
+    					$('#member-secession-modal-id').animate({opacity:0},25);
+    					$('.background-gray3').removeClass('modal-show');
+    					$('.background-gray3').addClass('modal-del');
+    					
+    					$('html, body').removeClass('modal-body');
+    					$('#element').off('scroll touchmove mousewheel', function(event) {
+    		    			event.preventDefault();
+    		    			event.stopPropagation();
+    		    			return false;
+    		    		});
+    				}
+    			});
+    			
+    			$('#element').on('scroll touchmove mousewheel', function(event) {
+    			  event.preventDefault();
+    			  event.stopPropagation();
+    			  return false;
+    			});
+    		});
     	});
     </script>
 </head>
 <body>
+
+	<div class="background-gray modal-del" id="background-gray-id">
+		<div class="introduce-modal" id="introduce-modal-id">
+		
+			<div>한줄소개 변경<button class="introduce-modal-btn" id="introduce-modal-btn-id">✖</button></div>
+			
+			<textarea class="introduce-modal-insert" placeholder="한줄소개 입력" id="introduce-modal-insert-id"></textarea>
+
+			<div style="float:right; margin-right:2px; width:120px; height:50px;">
+				<button style="margin-right:5px;" class="btn-cancel">취소</button> 
+				<button class="btn-save" id="btn-save-id">저장</button>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="background-gray2 modal-del" id="background-gray-id2">
+		<div class="change-pw-modal" id="change-pw-modal-id">
+		
+			<div>비밀번호 변경<button class="change-pw-modal-btn" id="change-pw-modal-btn-id">✖</button></div>
+			
+			<div style="width:240px; height: 220px; margin:auto;">
+				<p style="font-size:12px;">현재 비밀번호</p>
+				<input class="pw-input" type="password" />
+				<p style="font-size:12px;">새로운 비밀번호</p>
+				<input class="pw-input" type="password" />
+				<p style="font-size:12px;">새로운 비밀번호 확인</p>
+				<input class="pw-input" type="password" />
+			</div>
+		
+			<div style="float:right; margin-right:2px; width:120px; height:50px;">
+				<button style="font-size:12px;" class="btn-save" id="btn-save-id2">비밀번호 재설정</button>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="background-gray3 modal-del" id="background-gray-id3">
+		<div class="member-secession-modal" id="member-secession-modal-id">
+		
+			<div>회원탈퇴<button class="member-secession-modal-btn" id="member-secession-modal-btn-id">✖</button></div>
+			
+			<div style="height:58px;">
+				<p class="member-secession-div">회원 탈퇴를 하게 되면 보유하신 프로필, 업적 등이 모두 사라지며, 작성한 글, 댓글 등이 모두 사라집니다. 동의하십니까?</p>
+			</div>
+
+			<div style="float:right; width:90px; height:50px;">
+				<button style="font-size:12px; border-radius: 2px;" class="btn-save" id="btn-save-id3">동의합니다</button>
+			</div>
+			
+		</div>
+	</div>
+	
+<div id="fake-body">
 	<!-- 위에 navbar 부분입니다 -->
     <header class="header-mainnav">
         <div class="header-container">
@@ -98,7 +363,7 @@
       						한줄소개
       					</div>
       					<div class="introduce">
-      						<div id="introduce-text">안녕 나는 블라디미르 장인 KS 야 6767</div>
+      						<div id="introduce-text"></div>
       					</div>
       					
       					<div>
@@ -107,11 +372,11 @@
       				</div>
       				
       				<div style="position:absolute; top:210px; right:50px;">
-      					<button style="width:100px;" class="first-btn">비밀번호 변경</button>
+      					<button id="change-pw-btn" style="width:100px;" class="first-btn">비밀번호 변경</button>
       				</div>
       				
       				<div style="position:absolute; top:250px; right:50px;">
-      					<button style="width:100px;" class="first-btn">회원탈퇴</button>
+      					<button id="member-secession-btn" style="width:100px;" class="first-btn">회원탈퇴</button>
       				</div>
       				
       			</div>
@@ -125,119 +390,152 @@
     
         <div class="change-img">
         	<div style="height:150px;">
-        		<div>
-        			<div class="anne fl">
+        			<div class="profile-settings fl">
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
+	        			<img src="../Images/icon_search2.webp"/>
 	        			<div>프로필로<br/>설정</div>
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
         			</div>
-        			<div class="anne fl">
+        			<div class="profile-settings fl">
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
+	        			<img src="../Images/icon_search2.webp"/>
 	        			<div>프로필로<br/>설정</div>
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
         			</div>
-        			<div class="anne fl">
+        			<div class="profile-settings fl">
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
+	        			<img src="../Images/icon_search2.webp"/>
 	        			<div>프로필로<br/>설정</div>
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
         			</div>
-        			<div class="anne fl">
+        			<div class="profile-settings fl">
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
+	        			<img src="../Images/icon_search2.webp"/>
 	        			<div>프로필로<br/>설정</div>
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
         			</div>
-        			<div class="anne fl">
+        			<div class="profile-settings fl">
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
+	        			<img src="../Images/icon_search2.webp"/>
 	        			<div>프로필로<br/>설정</div>
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
         			</div>
-        			<div class="anne fl">
+        			<div class="profile-settings fl">
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-        			
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
-	        			<div>프로필로<br/>설정</div>
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-        			</div>
-        			<div class="anne fl">
-	        			<img class="img" src="../Images/profile/anne1.jpg"/>
-	        			<img src="https://s3.lol.ps/file/lol-ps/static/img/icon_search.png"/>
+	        			<img src="../Images/icon_search2.webp"/>
 	        			<div>프로필로<br/>설정</div>
 	        			<img class="img" src="../Images/profile/anne1.jpg"/>
         			</div>
         			
-        		</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
+        			<div class="profile-settings fl">
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+	        			<img src="../Images/icon_search2.webp"/>
+	        			<div>프로필로<br/>설정</div>
+	        			<img class="img" src="../Images/profile/anne1.jpg"/>
+        			</div>
         	</div>
         </div>
         
@@ -269,8 +567,7 @@
         </div>
 
     </footer>
-
-<script src="my-page.js"></script>
+</div>
 <script src="../Js/all.js"></script>
 </body>
 </html>
