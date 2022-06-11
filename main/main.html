@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인페이지</title>
+    <link rel="stylesheet" href="../Css/all.css">
     <link rel="stylesheet" href="main.css">
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <script src="../Js/jquery-3.6.0.min.js"></script>
@@ -13,7 +14,7 @@
     <header class="header-mainnav">
         <div class="header-container">
             <a href="/">
-                <img src="/header-logo.webp" alt="LOL.PS">
+                <img src="../Images/header-logo.webp" alt="LOL.PS">
             </a>
             <div class = "nav-item-container">
                 <a class="nav-items" href="/notice">공지사항</a>
@@ -40,13 +41,13 @@
                         <input type="text" name="name" placeholder="챔피언 이름을 입력하세요">
                     </div>
                     <button type="submit">
-                        <img src="icon_search.webp" style="width: 20px; height: 20px;">
+                        <img src="../Images/icon_search.webp" style="width: 20px; height: 20px;">
                     </button>
                 </div>
 
                 <div class="realtime">
                     <span class="realspan">실시간 검색어</span>
-                    <img src="icon_chevron-white.png" alt="img" style="float : right;">
+                    <img src="../Images/icon_chevron-white.png" alt="img" style="float : right;">
                     <div class="word_wrapper">
                         <ul id="realtime_search">
                             <a class="realtime_word" href="">
@@ -85,6 +86,8 @@
             </form>
         </div>
 
+        <button class="left">왼쪽</button>
+        <button class="right">오른쪽</button>
         <h3  style="color: #fff;">주목해야 할 챔피언 (KR) <small style="color: darkgray;">05-24 10:46 기준</small></h3>
         <div style="overflow: hidden; position: absolute; bottom: 0;">
             <div class="mainslide_container" style="color: #fff;">
@@ -191,8 +194,7 @@
     </main>
 
     <div style="height: 300px;"></div>
-    <button class="left">왼쪽</button>
-    <button class="right">오른쪽</button>
+
 
     <div class="community-container">
         <div class="community">

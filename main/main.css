@@ -23,7 +23,7 @@ a:active {
     padding-top : 7vh;
     width: 100vw;
     height: 85vh;
-    background-image: url('headerbg.webp');
+    background-image: url('../Images/headerbg.webp');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
@@ -175,7 +175,7 @@ ul {
 
 
 .slide-image {
-    background-image: url('aatrox.jpg');
+    background-image: url('../Images/champion/full/aatrox.jpg');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -187,7 +187,7 @@ ul {
 }
 
 .slide-image-small {
-    background-image: url('aatrox.jpg');
+    background-image: url('../Images/champion/full/aatrox.jpg');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
