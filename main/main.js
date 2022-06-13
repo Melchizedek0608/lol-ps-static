@@ -11,8 +11,18 @@ const slideRealtime = setInterval(() => {
         count = 1;
     }
 
-}, 1000);
+}, 3000);
 
+function callFunction(obj) {
+	$('#realtime_search').addClass('background-white');
+	$('.realtime a').removeClass('realtime-color-black');
+	$('.realtime a').addClass('realtime-color-black');
+	$('.word_wrapper').removeClass('overflow');
+	$('.searchbar').addClass('searchbar-padding-bottom');
+	slideRealtime = setInterval(() => {
+	    realtime.style.transform = 'none';
+	});
+};
 
 let card = `
         <div class="swiper-wrapper">

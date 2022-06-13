@@ -17,25 +17,21 @@
                 <img src="../Images/header-logo.webp" alt="LOL.PS">
             </a>
             <div class = "nav-item-container">
-                <a class="nav-items" href="/notice">공지사항</a>
-                <a class="nav-items" href="/champ/rank">챔피언 랭킹</a>
-                <a class="nav-items" href="/community">자유게시판</a>
-                <a class="nav-items" href="/community/build">빌드연구소</a>
+            	<a class="nav-items" href="../notice/notice.html">공지사항</a>
+                <a class="nav-items" href="../rank/rank.html">챔피언 랭킹</a>
+                <a class="nav-items" href="../community/build.html">빌드게시판</a>
+                <a class="nav-items" href="../community/free.html">자유게시판</a>
             </div>
             <div class="sign-login">
-                <a href="/signin">
-                    <button class="signin">회원가입</button>
-                </a>
-                <a href="/login">
-                    <button class="login">로그인</button>
-                </a>
+                <a class="signin" href="../member/signin.html">회원가입</a>
+                <a class="login" href="../member/login.html">로그인</a>
             </div>
         </div>
     </header>
     <main class="main">
         <div class="search">
 
-            <form action="/champ/statistics" method="post" id="search_form">
+            <form action="/champ/statistics" method="post" id="search_form" style="z-index:11; position : fixed;">
                 <div class="searchbar">
                     <div style="width: 560px;">
                         <input type="text" name="name" placeholder="챔피언 이름을 입력하세요">
@@ -48,38 +44,58 @@
                 <div class="realtime">
                     <span class="realspan">실시간 검색어</span>
                     <img src="../Images/icon_chevron-white.png" alt="img" style="float : right;">
-                    <div class="word_wrapper">
+                    <div class="word_wrapper overflow">
                         <ul id="realtime_search">
-                            <a class="realtime_word" href="">
-                                <li><span>1</span>탈리야</li>
-                            </a>
-                            <a class="realtime_word" href="">
-                                <li><span>2</span>루시안</li>
-                            </a>
-                            <a class="realtime_word" href="">
-                                <li><span>3</span>세나</li>
-                            </a>
-                            <a class="realtime_word" href="">
-                                <li><span>4</span>올라프</li>
-                            </a>
-                            <a class="realtime_word" href="">
-                                <li><span>5</span>이즈리얼</li>
-                            </a>
-                            <a class="realtime_word" href="">
-                                <li><span>6</span>카이사</li>
-                            </a>
-                            <a class="realtime_word" href="">
-                                <li><span>7</span>그레이브즈</li>
-                            </a>
-                            <a class="realtime_word" href="">
-                                <li><span>8</span>아리</li>
-                            </a>
-                            <a class="realtime_word" href="">
-                                <li><span>9</span>아칼리</li>
-                            </a>
-                            <a class="realtime_word" href="">
-                                <li><span>10</span>스웨인</li>
-                            </a>
+                            <li>
+                            	<a class="realtime_word realtime-color-white" href="javascript:void(0);" onclick="callFunction();">
+                                	<span>1</span>탈리야
+                            	</a>
+                            </li>
+                            <li>
+                            	<a class="realtime_word realtime-color-white" href="javascript:void(0);" onclick="callFunction();">
+                                	<span>2</span>샤코
+                            	</a>
+                            </li>
+                            <li>
+                            	<a class="realtime_word realtime-color-white" href="javascript:void(0);" onclick="callFunction();">
+                                	<span>3</span>이즈리얼
+                            	</a>
+                            </li>
+                            <li>
+                            	<a class="realtime_word realtime-color-white" href="javascript:void(0);" onclick="callFunction();">
+                                	<span>4</span>탐켄치
+                            	</a>
+                            </li>
+                            <li>
+                            	<a class="realtime_word realtime-color-white" href="javascript:void(0);" onclick="callFunction();">
+                                	<span>5</span>일라오이
+                            	</a>
+                            </li>
+                            <li>
+                            	<a class="realtime_word realtime-color-white" href="javascript:void(0);" onclick="callFunction();">
+                                	<span>6</span>쉬바나 
+                            	</a>                    
+                            </li>                       
+                            <li>                        
+                            	<a class="realtime_word realtime-color-white" href="javascript:void(0);" onclick="callFunction();">
+                                	<span>7</span>트위치 
+                            	</a>                    
+                            </li>                       
+                            <li>                        
+                            	<a class="realtime_word realtime-color-white" href="javascript:void(0);" onclick="callFunction();">
+                                	<span>8</span>신지드 
+                            	</a>                    
+                            </li>                       
+                            <li>                        
+                            	<a class="realtime_word realtime-color-white" href="javascript:void(0);" onclick="callFunction();">
+                                	<span>9</span>오리 아나
+                            	</a>                    
+                            </li>                       
+                            <li>                        
+                            	<a class="realtime_word realtime-color-white" href="javascript:void(0);" onclick="callFunction();">
+                                	<span>10</span>쉔
+                            	</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -90,7 +106,7 @@
         <button class="right">오른쪽</button>
         <h3  style="color: #fff;">주목해야 할 챔피언 (KR) <small style="color: darkgray;">05-24 10:46 기준</small></h3>
         <div style="overflow: hidden; position: absolute; bottom: 0;">
-            <div class="mainslide_container" style="color: #fff;">
+            <div class="mainslide_container" style="color: #fff; z-index: 1;">
 <!--                <div class="swiper-wrapper">-->
 <!--                    <div class="swiper-slide">-->
 <!--                        <div class="slide-image">-->
