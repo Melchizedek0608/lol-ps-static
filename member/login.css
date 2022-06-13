@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    height: 1100px;
+    height: 1200px;
     position: relative;
 }
 
@@ -109,10 +109,17 @@ li {
     margin-bottom: 16px;
     list-style: none;
 }
+
 form {
     display: block;
     margin-top: 0em;
 }
+
+form p {
+    color: #ff4040;
+    margin-top: 5px;
+}
+
 .form-group {
     text-align: left;
     width: 90%;

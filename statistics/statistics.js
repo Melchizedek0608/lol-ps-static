@@ -4,7 +4,7 @@ const summaryBtn2 = document.querySelectorAll('.summary-button')[1];
 summaryBtn1.addEventListener('click', () => {
     summaryBtn1.classList.remove('summary-button-active');
     summaryBtn2.classList.remove('summary-button-active');
-
+    
     summaryBtn1.classList.add('summary-button-active');
 })
 
