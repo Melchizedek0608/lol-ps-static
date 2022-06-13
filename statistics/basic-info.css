@@ -58,6 +58,7 @@
     padding: 0 12px 0 12px;
     
 }
+
 .i-rank {
     font-style: normal;
     color: rgba(47, 62, 78, .4);
@@ -68,6 +69,10 @@
     padding-bottom: 24px;
     text-decoration: none;
 }
+.skill-detail-info:hover {
+    background: rgba(126, 155, 255, .3);
+}
+
 .champ-img {
     width: 36px;
     height: 36px;
@@ -84,7 +89,7 @@
     color: rgba(47, 62, 78, .7);
     line-height: 1.5;
     cursor: pointer;
-    -webkit-text-stroke-width:thick;
+    -webkit-text-stroke-width:thin;
 }
 .champ-skill {
     font-size: 16px;
@@ -140,4 +145,9 @@
     font-size: 14px;
     color: #353943;
     word-wrap: break-word;
+<<<<<<< HEAD
+    font-weight: 700;
 }
+=======
+}
+>>>>>>> d0fa7046a7d591cd4ebd98e25ee81f4040b92efa
