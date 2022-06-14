@@ -9,7 +9,7 @@ body {
     color : #213a96;
     position:relative;
     margin: 0;
-    height: auto;
+    height: 4600px;
 }
 
 a { 
@@ -333,7 +333,7 @@ img {
     border-right: 1px solid rgba(174,144,86,.6);
     border-top: 1px solid rgba(174,144,86,.6);
     border-bottom: 1px solid #ffc030;
-    z-index: 10;
+    z-index: 50;
     transition: all 200ms;
 }
 
@@ -589,7 +589,7 @@ p {
     position: absolute;
     bottom: 0;
     display: flex;
-    background-color:#F3F4F6;
+    background-color:#d6d9e0;;
     height: 200px;
     width: 100%;
     justify-content: center;

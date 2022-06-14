@@ -63,7 +63,7 @@ let card = `
                     </div>
 
                     <div style="width:135px; padding: 50px 0px 0px 200px;">
-                        <a class="champ-link" href="#">챔피언 상세정보 →</a>
+                        <a class="champ-link" href="../statistics/statistics.html">챔피언 상세정보 →</a>
                     </div>
                 </div>
             </div>
