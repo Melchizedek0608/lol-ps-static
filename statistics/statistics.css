@@ -140,6 +140,12 @@
     margin: 0;
 }
 
+.spell-list2 {
+	padding: 0;
+    margin: 0;
+    display: none;
+}
+
 .spell-percent {
     display: flex;
     justify-content: right;
@@ -194,6 +200,14 @@
     height: 20px;
     padding: 8px 10px;
     color: #353945;
+}
+
+.display-none {
+	display: none;	
+}
+
+.display-block {
+	display: block;
 }
 
 .match-list a {
