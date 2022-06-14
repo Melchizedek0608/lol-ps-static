@@ -3,6 +3,9 @@
 *{
     box-sizing: border-box;
 }
+a {
+text-decoration : none;
+}
 
 body {
     background-color: #f5f7f8;
