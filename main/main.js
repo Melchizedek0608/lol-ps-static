@@ -62,7 +62,7 @@ let card = `
                         <p style="font-size: 12px;">최근 패치에서 아트록스의 승률이 -1% 하락하였습니다. 곧 구체적인 원인을 분석하여 업데이트 될 예정입니다.</p>
                     </div>
 
-                    <div style="width:135px; padding: 50px 0px 0px 200px;">
+                    <div style="width:135px; padding: 10px 0px 0px 170px;">
                         <a class="champ-link" href="../statistics/statistics.html">챔피언 상세정보 →</a>
                     </div>
                 </div>
