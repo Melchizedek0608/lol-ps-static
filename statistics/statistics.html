@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>챔피언 통계</title>
-    <link rel="stylesheet" href="statistics.css">
-    <link rel="stylesheet" href="statistics-main.css">
+    <link rel="stylesheet" href="../Css/all.css">
+    
+    <style>*{box-sizing: border-box;}</style>
 </head>
-<body>
+<body class="statistics-main-body">
     <header class="header-mainnav">
         <div class="header-container">
             <a href="../main/main.html">
@@ -218,7 +219,7 @@
                     <div class="item-core-summary">
                         <div class="item-core-summary-items">
                             1코어
-                            <img src="../Images/garen.png" alt="img">
+                            <img src="../Images/champion/head/garen.png" alt="img">
                             or
                             <img src="../Images/garen.png" alt="img">
                             or
@@ -351,12 +352,12 @@
             <a class="champ-nav-items" href="../statistics/champ-community.html">커뮤니티</a>
         </div>
 
-        <div class="champ-match-container" id="counter">
-            <div class="title">가렌 상대 챔피언</div>
-            <div class="champ-match">
-                <div class="match-list">
+        <div class="statistics-champ-match-container" id="counter">
+            <div class="statistics-title">가렌 상대 챔피언</div>
+            <div class="statistics-champ-match">
+                <div class="statistics-match-list">
                     <h4>상대하기 어려움</h4>
-                    <a class="hard-list gray" href="#">
+                    <a class="statistics-hard-list statistics-gray" href="#">
                         <span style="width: 10%;">
                             <img src="../Images/champion/head/anivia.png" alt="img">
                         </span>
@@ -365,10 +366,10 @@
                         </span>
                         <span style="width: 30%; padding-top: 10px;">
                             <span>207 게임</span>
-                            <span class="hard">43.00%</span>
+                            <span class="statistics-hard">43.00%</span>
                         </span>
                     </a>
-                    <a class="hard-list" href="#">
+                    <a class="statistics-hard-list" href="#">
                         <span style="width: 10%;">
                             <img src="../Images/champion/head/anivia.png" alt="img">
                         </span>
@@ -377,13 +378,13 @@
                         </span>
                         <span style="width: 30%; padding-top: 10px;">
                             <span>207 게임</span>
-                            <span class="hard">43.00%</span>
+                            <span class="statistics-hard">43.00%</span>
                         </span>
                     </a>
                 </div>
-                <div class="match-list">
+                <div class="statistics-match-list">
                     <h4>상대하기 쉬움</h4>
-                    <a class="hard-list gray" href="#">
+                    <a class="statistics-hard-list statistics-gray" href="#">
                         <span style="width: 10%;">
                             <img src="../Images/champion/head/anivia.png" alt="img">
                         </span>
@@ -392,10 +393,10 @@
                         </span>
                         <span style="width: 30%; padding-top: 10px;">
                             <span>207 게임</span>
-                            <span class="easy">43.00%</span>
+                            <span class="statistics-easy">43.00%</span>
                         </span>
                     </a>
-                    <a class="hard-list">
+                    <a class="statistics-hard-list">
                         <span style="width: 10%;">
                             <img src="../Images/champion/head/anivia.png" alt="img">
                         </span>
@@ -404,331 +405,331 @@
                         </span>
                         <span style="width: 30%; padding-top: 10px;">
                             <span>207 게임</span>
-                            <span class="easy">43.00%</span>
+                            <span class="statistics-easy">43.00%</span>
                         </span>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="content-container" id="spell-startitem">
-            <div class="spell-items" id="spell-startitem">
-                <div class="title">스펠, 아이템 선택</div>
-                <div class="spell-item-content">
-                    <div class="spell-box">
+        <div class="statistics-content-container" id="spell-startitem">
+            <div class="statistics-spell-items" id="spell-startitem">
+                <div class="statistics-title">스펠, 아이템 선택</div>
+                <div class="statistics-spell-item-content">
+                    <div class="statistics-spell-box">
                         <h4 style="padding:5px">스펠</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items gray">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items gray">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent">
+                                <div class="statistics-spell-percent">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items gray"></li>
                         </ul>
                     </div>
-                    <div class="spell-box">
+                    <div class="statistics-spell-box">
                         <h4 style="padding:5px">스타트 아이템</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items gray">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items gray">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent">
+                                <div class="statistics-spell-percent">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items gray"></li>
                         </ul>
                     </div>
-                    <div class="spell-box" style="border-right: none;">
+                    <div class="statistics-spell-box" style="border-right: none;">
                         <h4 style="padding:5px">신발</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items gray">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items statistics-gray">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent">
+                                <div class="statistics-spell-percent">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items gray"></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="content-container core-each" id="coreitem">
-            <div class="spell-items">
-                <div class="title">코어템 통계</div>
-                <div class="spell-item-content">
-                    <div class="spell-box">
+        <div class="statistics-content-container statistics-core-each" id="coreitem">
+            <div class="statistics-spell-items">
+                <div class="statistics-title">코어템 통계</div>
+                <div class="statistics-spell-item-content">
+                    <div class="statistics-spell-box">
                         <h4 style="padding:5px">1코어</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items gray">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items statistics-gray">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                 </div>
-                                <div class="spell-percent">
+                                <div class="statistics-spell-percent">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items gray"></li>
                         </ul>
                     </div>
-                    <div class="spell-box">
+                    <div class="statistics-spell-box">
                         <h4 style="padding:5px">2코어</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items gray">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items statistics-gray">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                 </div>
-                                <div class="spell-percent">
+                                <div class="statistics-spell-percent">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
                         </ul>
                     </div>
-                    <div class="spell-box" style="border-right: none;">
+                    <div class="statistics-spell-box" style="border-right: none;">
                         <h4 style="padding:5px;">3코어</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items gray">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items statistics-gray">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                 </div>
-                                <div class="spell-percent">
+                                <div class="statistics-spell-percent">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="content-container core-combine">
-            <div class="spell-items">
-                <div class="title">코어템 조합 통계</div>
-                <div class="spell-item-content">
-                    <div class="spell-box">
+        <div class="statistics-content-container statistics-core-combine">
+            <div class="statistics-spell-items">
+                <div class="statistics-title">코어템 조합 통계</div>
+                <div class="statistics-spell-item-content">
+                    <div class="statistics-spell-box">
                         <h4 style="padding:5px">2코어 조합</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items gray">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items statistics-gray">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent">
+                                <div class="statistics-spell-percent">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items "></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
+                            <li class="statistics-list-items "></li>
+                            <li class="statistics-list-items statistics-gray"></li>
+                            <li class="statistics-list-items"></li>
                         </ul>
                     </div>
-                    <div class="spell-box">
+                    <div class="statistics-spell-box">
                         <h4 style="padding:5px">3코어 조합</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items gray">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items statistics-gray">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent">
+                                <div class="statistics-spell-percent">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
                         </ul>
                     </div>
-                    <div class="spell-box" style="border-right: none;">
+                    <div class="statistics-spell-box" style="border-right: none;">
                         <h4 style="padding:5px;">4코어 조합</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items gray">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items statistics-gray">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent">
+                                <div class="statistics-spell-percent">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="content-container skill" id="skills">
-            <div class="spell-items">
-                <div class="title">스킬</div>
-                <div class="spell-item-content">
-                    <div class="spell-box" style="border-right: none; width: 35%;">
+        <div class="statistics-content-container statistics-skill" id="skills">
+            <div class="statistics-spell-items">
+                <div class="statistics-title">스킬</div>
+                <div class="statistics-spell-item-content">
+                    <div class="statistics-spell-box" style="border-right: none; width: 35%;">
                         <h4 style="padding:5px">마스터 순서</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items border-bottom">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items statistics-border-bottom">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent">
+                                <div class="statistics-spell-percent">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
                         </ul>
                     </div>
-                    <div class="spell-box" style="border-right: none; width: 65%; padding: 12px 12px;">
-                        <div class="what-level-container">
-                            <span class="what-level what-level-active">3레벨 까지</span>
-                            <span class="what-level">6레벨 까지</span>
-                            <span class="what-level">11레벨 까지</span>
+                    <div class="statistics-spell-box" style="border-right: none; width: 65%; padding: 12px 12px;">
+                        <div class="statistics-what-level-container">
+                            <span class="statistics-what-level statistics-what-level-active">3레벨 까지</span>
+                            <span class="statistics-what-level">6레벨 까지</span>
+                            <span class="statistics-what-level">11레벨 까지</span>
                         </div>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
                         <!--  3레벨 -->
-                        <ul class="spell-list2 display-block" id="skill-seq3">
-                            <li class="list-items border-bottom">
-                                <div class="spell">
+                        <ul class="statistics-spell-list2 statistics-display-block" id="skill-seq3">
+                            <li class="statistics-list-items statistics-border-bottom">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent" style="width: 40%;">
+                                <div class="statistics-spell-percent" style="width: 40%;">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
                         </ul>
                         <!-- 6레벨 -->
-                        <ul class="spell-list2" id="skill-seq6">
-                            <li class="list-items border-bottom">
-                                <div class="spell">
+                        <ul class="statistics-spell-list2" id="skill-seq6">
+                            <li class="statistics-list-items statistics-border-bottom">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
@@ -736,21 +737,21 @@
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent" style="width: 40%;">
+                                <div class="statistics-spell-percent" style="width: 40%;">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
                         </ul>
                         <!-- 11레벨 -->
-                        <ul class="spell-list2" id="skill-seq11">
-                            <li class="list-items border-bottom">
-                                <div class="spell">
+                        <ul class="statistics-spell-list2" id="skill-seq11">
+                            <li class="statistics-list-items statistics-border-bottom">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
@@ -763,74 +764,74 @@
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent" style="width: 40%;">
+                                <div class="statistics-spell-percent" style="width: 40%;">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
-                            <li class="list-items border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
+                            <li class="statistics-list-items statistics-border-bottom"></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="content-container rune" id="runes">
-            <div class="spell-items">
-                <div class="title">룬</div>
-                <div class="spell-item-content">
-                    <div class="spell-box" style="width: 60%; padding: 15px;">
+        <div class="statistics-content-container statistics-rune" id="runes">
+            <div class="statistics-spell-items">
+                <div class="statistics-title">룬</div>
+                <div class="statistics-spell-item-content">
+                    <div class="statistics-spell-box" style="width: 60%; padding: 15px;">
                         <h4 style="padding:5px">조합별 통계</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items gray">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items statistics-gray">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent" style="width: 45%;">
+                                <div class="statistics-spell-percent" style="width: 45%;">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
                         </ul>
                     </div>
-                    <div class="spell-box" style="border-right: none; width: 40%; padding: 15px;">
+                    <div class="statistics-spell-box" style="border-right: none; width: 40%; padding: 15px;">
                         <h4 style="padding:5px">파편 조합 통계</h4>
-                        <div class="number">
-                            <span class="number-items">승률</span>
-                            <span class="number-items">선택률</span>
-                            <span class="number-items">카운트수</span>
+                        <div class="statistics-number">
+                            <span class="statistics-number-items">승률</span>
+                            <span class="statistics-number-items">선택률</span>
+                            <span class="statistics-number-items">카운트수</span>
                         </div>
-                        <ul class="spell-list">
-                            <li class="list-items gray">
-                                <div class="spell">
+                        <ul class="statistics-spell-list">
+                            <li class="statistics-list-items statistics-gray">
+                                <div class="statistics-spell">
                                     <img src="../Images/spell/flash.png" alt="img">
                                     <img src="../Images/spell/exhaust.png" alt="img">
                                 </div>
-                                <div class="spell-percent">
+                                <div class="statistics-spell-percent">
                                     <span style="width: 23.3%;">52.44</span>
                                     <span style="width: 23.3%;">76.39</span>
                                     <span style="width: 23.3%;">1,556</span>
                                 </div>
                             </li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
-                            <li class="list-items"></li>
-                            <li class="list-items gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
+                            <li class="statistics-list-items"></li>
+                            <li class="statistics-list-items statistics-gray"></li>
                         </ul>
                     </div>
                 </div>
