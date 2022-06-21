@@ -6,8 +6,6 @@ const adBtn = document.querySelectorAll('.rank-position-button')[3];
 const supBtn = document.querySelectorAll('.rank-position-button')[4];
 const allBtn = document.querySelectorAll('.rank-position-button')[5];
 
-
-
 position.addEventListener('click', (e) => {
     if(e.target === topBtn) {
         topBtn.classList.remove('active');
