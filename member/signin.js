@@ -1,16 +1,16 @@
-const signInForm = document.querySelector('[name=signInForm]');
-const submitBtn = document.querySelector('#summit-button');
+const signInForm = $('[name=signInForm]');
+const submitBtn = $('#summit-button');
 
-const emailInput = signInForm.querySelector('input[name=email]');
-const passwordInput = signInForm.querySelector('input[name=password]');
-const passwordConfirmInput = signInForm.querySelector('input[name=password-confirm]')
+const emailInput = $('input[name=email]');
+const passwordInput = $('input[name=password]');
+const passwordConfirmInput = $('input[name=password-confirm]')
 
 const emailPattern = new RegExp(/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i);
 const passwordPattern = new RegExp(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/)
 
-const emailPtag = document.querySelector('#email-p');
-const passwordPtag = document.querySelector('#password-p');
-const passwordConfirmPtag = document.querySelector('#password-confirm-p');
+const emailPtag = $('#email-p');
+const passwordPtag = $('#password-p');
+const passwordConfirmPtag = $('#password-confirm-p');
 
 function validationTest(pattern, input) {
     if(pattern.test(input.value)) {
@@ -20,30 +20,42 @@ function validationTest(pattern, input) {
     }
 }
 
-emailInput.addEventListener('change', (e) => {
+emailInput.on('change', () => {
     if(validationTest(emailPattern, emailInput)) {
-        emailPtag.innerHTML = "";
+        emailPtag.html("");
     }else{
-        emailPtag.innerHTML = '올바른 이메일 형식을 입력하세요!!';
+        emailPtag.html('올바른 이메일 형식을 입력하세요!!')
         emailInput.focus();
         return;
     }
 })
 
-passwordInput.addEventListener('change', (e) => {
+passwordInput.on('change', () => {
+
     if(validationTest(passwordPattern, passwordInput)) {
-        passwordPtag.innerHTML = "";
+        passwordPtag.html("");
     }else{
-        passwordPtag.innerHTML = '숫자, 알파벳, 특수문자를 포함하셔야 합니다!!';
+        passwordPtag.html('숫자, 알파벳, 특수문자를 포함하셔야 합니다!!');
         passwordInput.focus();
         return;
     }
 })
 
-passwordConfirmInput.addEventListener('change', () => {
-    if(passwordInput.value === passwordConfirmInput.value) {
-        passwordConfirmPtag.innerHTML = "";
+passwordConfirmInput.on('change', () => {
+    if(passwordInput.val() === passwordConfirmInput.val()) {
+        passwordConfirmPtag.html("");
     }else {
-        passwordConfirmPtag.innerHTML = "비밀번호와 일치하지 않습니다!!";
+        passwordConfirmPtag.html("비밀번호와 일치하지 않습니다!!");
+    }
+})
+
+submitBtn.on('click', () => {
+    if(validationTest(emailPattern, emailInput) && validationTest(passwordPattern, passwordInput)) {
+
+
+
+
+    }else {
+        console.log('적절한 이메일, 비밀번호가 아닙니다.')
     }
 })
