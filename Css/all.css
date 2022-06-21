@@ -322,7 +322,7 @@ img {
     height: 20%;
 }
 
-.summary-button {
+.statistics-summary-button {
     cursor: pointer;
     position: absolute;
     left: 20%;
@@ -340,7 +340,7 @@ img {
     transition: all 200ms;
 }
 
-.summary-button-active {
+.statistics-summary-button-active {
     background-color: #1f2331;
     color: #ffc030;
     border: 1px solid #ffc030;
