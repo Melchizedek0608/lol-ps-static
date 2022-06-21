@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
     <link rel="stylesheet" href="../Css/all.css">
-    <link rel="stylesheet" href="login.css">
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <script src="../Js/jquery-3.6.0.min.js"></script>
 </head>
-<body>
-    
+<body class="member-body" style="height:1200px;">
     <!-- 위에 navbar 부분입니다 -->
     <header class="header-mainnav">
         <div class="header-container">
@@ -30,67 +28,68 @@
             </div>
         </div>
     </header>
-
-    <main class="main">
-        <div class = "side-left" style="height: 754px;">
-            <section class = "ad index ad-banner_vertical ad-fixed"></section>
-        </div>
-        <div class = "contents">
-            <div class=" row-sign">
-                <div class = "col-12">
-                    <h2 class="page-title">회원가입</h2>
-                </div>
-                <div class = "row">
-                    <div class = "email_login_box"> 
-                        <h3>이메일 회원 가입</h3>
-                        <form name="signInForm" onsubmit="return;">
-                            <div class = "form-group">
-                                <label>이메일 주소</label>
-                                <input type="email" name="email" class="form-control" placeholder="gamer@lol.ps">
-                                <p id="email-p"></p>
-                            </div>
-                            <div class = "form-group">
-                                <label>비밀번호</label>
-                                <input type="password" name="password" class="form-control" placeholder="비밀번호">
-                                <p id="password-p"></p>
-                            </div>
-                            <div class = "form-group">
-                                <label>비밀번호 확인</label>
-                                <input type="password" name="password-confirm" class="form-control" placeholder="비밀번호 확인">
-                                <p id="password-confirm-p"></p>
-                            </div>
-                            <div class = "form-group">
-                                <label>닉네임</label>
-                                <input type="text" name="nickname" class="form-control" id="nickname-input" placeholder="닉네임">
-                            </div>
-                            <button class="btn btn-lg btn-theme btn-big" id="summit-button">이메일 주소로 가입</button>
-                        </form>
-                    </div>
-
-                    <div class="sign-sns signin">
-                        <h3>소셜계정으로 가입</h3>
-                        <ul>
-                            <li>
-                                <a href="#" class="fbook a">
-                                    <img class = "img_log" src="https://s3.lol.ps/file/lol-ps/static/img/icon_sns_fbook.png" alt="페이스북 로그인" >
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="google a">
-                                    <img class = "img_log" src="https://s3.lol.ps/file/lol-ps/static/img/icon_sns_google.png" alt="구글 로그인"  >
-                                </a>
-                            </li>
-                            <li><a href="#" class="apple a">
-                                <img class = "img_log" src="https://s3.lol.ps/file/lol-ps/static/img/icon_sns_apple.png" alt="애플 로그인" >
-                            </a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-</main>
+	
+	<div class="all-main">
+	    <main class="member-main">
+	        <div class = "member-side-left" style="height: 754px;">
+	            <section class = "member-ad"></section>
+	        </div>
+	        <div class = "member-contents">
+	            <div class="member-row-sign">
+	                <div class = "member-col-12">
+	                    <h2 class="member-page-title">회원가입</h2>
+	                </div>
+	                <div class = "member-row">
+	                    <div class = "member-email_login_box"> 
+	                        <h3 class="member-h3">이메일 회원 가입</h3>
+	                        <form class="member-form" name="signInForm" onsubmit="return;">
+	                            <div class = "member-form-group">
+	                                <label class="member-laber">이메일 주소</label>
+	                                <input type="email" name="email" class="member-form-control" placeholder="gamer@lol.ps">
+	                                <p id="email-p"></p>
+	                            </div>
+	                            <div class = "member-form-group">
+	                                <label class="member-laber">비밀번호</label>
+	                                <input type="password" name="password" class="member-form-control" placeholder="비밀번호">
+	                                <p id="password-p"></p>
+	                            </div>
+	                            <div class = "member-form-group">
+	                                <label class="member-laber">비밀번호 확인</label>
+	                                <input type="password" name="password-confirm" class="member-form-control" placeholder="비밀번호 확인">
+	                                <p id="password-confirm-p"></p>
+	                            </div>
+	                            <div class = "member-form-group">
+	                                <label class="member-laber">닉네임</label>
+	                                <input type="text" name="nickname" class="member-form-control" id="nickname-input" placeholder="닉네임">
+	                            </div>
+	                            <button class="member-btn-theme member-btn-big" id="summit-button">이메일 주소로 가입</button>
+	                        </form>
+	                    </div>
+	
+	                    <div class="member-sign-sns signin">
+	                        <h3 class="member-h3">소셜계정으로 가입</h3>
+	                        <ul class="member-ul">
+	                            <li class="member-li">
+	                                <a href="#" class="member-fbook member-a">
+	                                    <img class = "member-img_log" src="https://s3.lol.ps/file/lol-ps/static/img/icon_sns_fbook.png" alt="페이스북 로그인" >
+	                                </a>
+	                            </li>
+	                            <li class="member-li">
+	                                <a href="#" class="google member-a">
+	                                    <img class = "member-img_log" src="https://s3.lol.ps/file/lol-ps/static/img/icon_sns_google.png" alt="구글 로그인"  >
+	                                </a>
+	                            </li>
+	                            <li class="member-li"><a href="#" class="apple member-a">
+	                                <img class = "member-img_log" src="https://s3.lol.ps/file/lol-ps/static/img/icon_sns_apple.png" alt="애플 로그인" >
+	                            </a></li>
+	
+	                            </ul>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+		</main>
+	</div>
 <footer class="footer">
 
     <div class="footer-left">

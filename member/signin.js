@@ -47,24 +47,3 @@ passwordConfirmInput.addEventListener('change', () => {
         passwordConfirmPtag.innerHTML = "비밀번호와 일치하지 않습니다!!";
     }
 })
-
-
-// ajax입니다
-// email, password의 유효성검사, password확인까지 통과하면 서버로 post요청을 보냅니다
-// url 부분에 요청하려는 서버의 doPost메소드 url쓰시면 됩니다
-
-// submitBtn.addEventListener('click', () => {
-//     if(validationTest(emailPattern, emailInput) && validationTest(passwordPattern, passwordInput && passwordInput.value === passwordConfirmInput.value)) {
-//         $.ajax({
-//             type: "POST",
-//             url: '/signin',
-//             data: JSON.stringify(signInForm.toObject()),
-//             contentType : 'application/json',
-//             success: function () {
-//                 console.log('success')
-//             },
-//         })
-//     }else {
-//         console.log('적절한 이메일, 비밀번호가 아닙니다.')
-//     }
-// })
