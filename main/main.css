@@ -1,24 +1,11 @@
-* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
 
-body {
+.main-body {
     position: relative;
     margin: 0;
     height: 1800px;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:active {
-    color: #fff;
-}
-
-.main {
+.main-main {
     position: relative;
     padding-top : 7vh;
     width: 100vw;
@@ -29,14 +16,13 @@ a:active {
     z-index: 0;
 }
 
-
-.search {
+.main-search {
     height: 12vh;
     margin: 80px 500px 24px;
     min-width: 920px;
 }
 
-.search input {
+.main-search input {
     position: absolute;
     border: none;
     border-radius: 4px 0px 0px 4px;
@@ -50,7 +36,7 @@ a:active {
     font-weight: 700;
 }
 
-.searchbar {
+.main-searchbar {
     position: relative;
     display: inline-block;
     width: 560px;
@@ -60,11 +46,11 @@ a:active {
     top: 0;
 }
 
-.searchbar-padding-bottom {
+.main-searchbar-padding-bottom {
 	padding-bottom: 261px;
 }
 
-.searchbar button {
+.main-searchbar button {
     position: absolute;
     right: 0;
     padding: 13px 14px 15px;
@@ -80,11 +66,11 @@ a:active {
     z-index: 10;
 }
 
-.searchbar button:hover {
+.main-searchbar button:hover {
     background-color: #3254ce;
 }
 
-.word_wrapper {
+.main-word_wrapper {
     position: relative;
     height: 31px;
     margin-top: 12px;
@@ -93,11 +79,11 @@ a:active {
     transition: all 400ms;
 }
 
-.overflow {
+.main-overflow {
 	overflow: hidden;
 }
 
-.realtime {
+.main-realtime {
     display: inline-block;
     width: 275px;
     height: 70px;
@@ -109,7 +95,7 @@ a:active {
     transform: translate(-15%, 0%);
 }
 
-.realtime a {
+.main-realtime a {
     display: block;
     position: relative;
     font-weight: 700;
@@ -120,15 +106,15 @@ a:active {
     text-overflow: ellipsis;
 }
 
-.realtime-color-white {
+.main-realtime-color-white {
 	color: white;
 }
 
-.realtime-color-black {
+.main-realtime-color-black {
 	color: black;
 }
 
-.realtime li span {
+.main-realtime li span {
     display: block;
     position: absolute;
     left: 5px;
@@ -141,7 +127,7 @@ a:active {
     line-height: 19px;
 }
 
-ul {
+.main-ul {
     list-style: none;
     width: 270px;
     background: #213a96;
@@ -152,37 +138,38 @@ ul {
     transition: all ease .4s;
 }
 
-.background-white {
+.main-background-white {
 	background-color: white;
 	color: black;
 }
 
-.realtime_word {
+.main-realtime_word {
     text-decoration: none;
 }
 
-.mainslide_container {
-    display: flex;
-    width: 300vw;
-    height: 400px;
+.main-mainslide_container {
     padding-top: 0;
     transition: all ease 250ms;
 }
 
-.swiper-wrapper {
+/* swiper js 클래스 */
+.swiper-wrapper {  
+    width: 210px !important;
+    height: 400px !important;
+}
+
+.main-swiper-wrapper {
     box-sizing: content-box;
     width: 600px;
     height: 0px;
 }
 
-.swiper-wrapper-small {
-    box-sizing: content-box;
-    width: 210px;
-    height: 400px;
+
+.main-swiper-wrapper-small {
     transform: translate(0%,-10%);
 }
 
-.swiper-slide {
+.main-swiper-slide {
     display: flex;
     text-align: center;
     margin-left: 15px;
@@ -190,7 +177,7 @@ ul {
     border-radius: 8px;
 }
 
-.slide-image {
+.main-slide-image {
     background-image: url('../Images/champion/full/aatrox.jpg');
     background-size: cover;
     background-position: right;
@@ -202,7 +189,7 @@ ul {
     box-shadow: 0px 4px 8px rgba(184, 184, 184, 0.5);
 }
 
-.slide-image-small {
+.main-slide-image-small {
     background-image: url('../Images/champion/full/aatrox.jpg');
     background-size: cover;
     background-position: right;
@@ -216,7 +203,7 @@ ul {
     box-shadow: 0px 4px 8px rgba(184, 184, 184, 0.5);
 }
 
-.champion-name {
+.main-champion-name {
     box-sizing: border-box;
     position: absolute;
     padding: 8px 16px;
@@ -228,7 +215,7 @@ ul {
     background : linear-gradient(0deg, #1F2331 50%, rgba(0, 0, 0, 0.3) 50%);
 }
 
-.champslide-infobox {
+.main-champslide-infobox {
     box-sizing: border-box;
     position: relative;
     width: 60%;
@@ -239,7 +226,7 @@ ul {
     padding: 20px 20px 20px 20px;
 }
 
-h2 {
+.main-h2 {
     margin: 0;
     text-align: left;
     font-weight: 300;
@@ -247,11 +234,11 @@ h2 {
     margin-bottom: 20px;
 }
 
-.before {
+.main-before {
     color: #ffffffA6;
 }
 
-.champ-status-header {
+.main-champ-status-header {
     display: flex;
     justify-content: space-around;
     height: 18px;
@@ -260,12 +247,12 @@ h2 {
     margin-bottom: 4px;
 }
 
-.champ-status-header span{
+.main-champ-status-header span{
     text-align: left;
     width: 100px;
 }
 
-.champ-status-item {
+.main-champ-status-item {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -274,7 +261,7 @@ h2 {
     text-align: left;
 }
 
-.champ-status-item h4{
+.main-champ-status-item h4{
     font-size: 14px;
     font-weight: 400;
     margin: 0;
@@ -282,23 +269,23 @@ h2 {
     color: #7e9bff;
 }
 
-.champ-status-item span{
+.main-champ-status-item span{
     width: 100px;
     font-size: 20px;
 }
 
-.champ-point {
+.main-champ-point {
     margin: 0;
     text-align: left;
     height: 80px;
 }
 
-.champ-point h4{
+.main-champ-point h4{
     font-size: 12px;
     color: #7e9bff;
 }
 
-.champ-link {
+.main-champ-link {
     width: 120px;
     height: 16.8px;
     padding: 5px 8px;
@@ -309,40 +296,40 @@ h2 {
     font-weight: 600;
 }
 
-.champ-link:hover{
+.main-champ-link:hover{
     background-color:#3d69ff;
     color: #fff;
 }
 
-.none {
+.main-none {
     display: none;
 }
 
-.community-container {
+.main-community-container {
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
 }
 
-.community {
+.main-community {
     width: 450px;
     height: 367px;
     margin-left: 30px;
 }
 
-.title{
+.main-title{
     margin: 0; 
     margin-bottom : 10px;
     font-size: 16px;
     color: #213a86;
 }
 
-.community-list-container {
+.main-community-list-container {
     width: 100%;
 }
 
-.community-list {
+.main-community-list {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -354,18 +341,18 @@ h2 {
     align-items: center;
 }
 
-.community-list:hover {
+.main-community-list:hover {
 	background: rgb(242, 245, 255);
 }
 
-.community-list span {
+.main-community-list span {
     width: 60px;    
     height: 100%;
     text-align: center;
 }
 
 
-.post-link {
+.main-post-link {
     width: 300px;
     height: 100%;
     text-decoration: none;
@@ -374,22 +361,22 @@ h2 {
     text-overflow: ellipsis;
 }
 
-.post-name {
+.main-post-name {
     font-weight: 600;
     color: #353945;
 }
 
-.post-title {
+.main-post-title {
     font-weight: 400;
     color: #353945;
 }
 
-.post-comment {
+.main-post-comment {
     color: #828b95;
     font-weight: 600;
 }
 
-.post-like {
+.main-post-like {
     font-weight: 600;
     color: #3d69ff;
 }

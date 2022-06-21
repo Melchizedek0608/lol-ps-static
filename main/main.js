@@ -14,19 +14,23 @@ const slideRealtime = setInterval(() => {
 }, 3000);
 
 function callFunction(obj) {
-	$('#realtime_search').addClass('background-white');
-	$('.realtime a').removeClass('realtime-color-black');
-	$('.realtime a').addClass('realtime-color-black');
-	$('.word_wrapper').removeClass('overflow');
-	$('.searchbar').addClass('searchbar-padding-bottom');
+	$('#realtime_search').addClass('main-background-white');
+	$('.main-realtime a').removeClass('main-realtime-color-black');
+	$('.main-realtime a').addClass('main-realtime-color-black');
+	$('.main-word_wrapper').removeClass('main-overflow');
+	$('.main-searchbar').addClass('main-searchbar-padding-bottom');
 	slideRealtime = setInterval(() => {
 	    realtime.style.transform = 'none';
 	});
 };
 
+
+
+
+
 let card = `
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
+        <div class="main-swiper-wrapper swiper-slide">
+            <div class="main-swiper-slide">
                 <div class="slide-image">
                     <h3 class="champion-name none">아트록스<small>(탑)</small></h3>
                 </div>
@@ -69,45 +73,31 @@ let card = `
             </div>
         </div>`;
 
-$('.swiper-wrapper-small').eq(4).click(() => {
-    $('.swiper-wrapper-small').eq(4).css({display : 'none'});
-    $('.swiper-wrapper').remove();
+$('.main-swiper-wrapper-small').eq(4).click(() => {
+    $('.main-swiper-wrapper-small').eq(4).css({display : 'none'});
+    $('.main-swiper-wrapper').remove();
 
-    $('.swiper-wrapper-small').eq(5).css({display : 'block'});
-    $('.swiper-wrapper-small').eq(3).after(card);
+    $('.main-swiper-wrapper-small').eq(5).css({display : 'block'});
+    $('.main-swiper-wrapper-small').eq(3).after(card);
 })
 
-$('.swiper-wrapper-small').eq(5).click(() => {
-    $('.swiper-wrapper-small').eq(4).css({display : 'block'});
-    $('.swiper-wrapper').remove();
+$('.main-swiper-wrapper-small').eq(5).click(() => {
+    $('.main-swiper-wrapper-small').eq(4).css({display : 'block'});
+    $('.main-swiper-wrapper').remove();
 
-    $('.swiper-wrapper-small').eq(5).css({display: 'none'});
-    $('.swiper-wrapper-small').eq(4).after(card);
+    $('.main-swiper-wrapper-small').eq(5).css({display: 'none'});
+    $('.main-swiper-wrapper-small').eq(4).after(card);
 })
 
 
-const left = document.querySelector('.left');
-const right = document.querySelector('.right');
-const container = document.querySelector('.mainslide_container')
-
-let cardSlide = 0;
-
-right.addEventListener('click', () => {
-    if(cardSlide >= 0 && cardSlide <= 11) {
-        cardSlide++;
-        container.style.transform = `translate(-${cardSlide * 210}px, 0%)`;
-        console.log(cardSlide)
-    }
-})
-
-left.addEventListener('click', () => {
-    if(cardSlide === 0) {
-        return
-    }
-
-    if(cardSlide > 0) {
-        cardSlide--;
-        container.style.transform =  `translate(-${cardSlide * 210}px, 0%)`;
-        console.log(cardSlide)
-    }
-})
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView : 'auto', // 한 슬라이드에 보여줄 갯수
+    centeredSlides: true,
+    autoplay:true,
+    autoplay: { 
+        delay: 2500,
+    },
+  });
