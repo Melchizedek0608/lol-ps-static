@@ -8,71 +8,70 @@ const allBtn = document.querySelectorAll('.rank-position-button')[5];
 
 position.addEventListener('click', (e) => {
     if(e.target === topBtn) {
-        topBtn.classList.remove('active');
-        jungleBtn.classList.remove('active');
-        midBtn.classList.remove('active');
-        adBtn.classList.remove('active');
-        supBtn.classList.remove('active');
-        allBtn.classList.remove('active')
+        topBtn.classList.remove('rank-active');
+        jungleBtn.classList.remove('rank-active');
+        midBtn.classList.remove('rank-active');
+        adBtn.classList.remove('rank-active');
+        supBtn.classList.remove('rank-active');
+        allBtn.classList.remove('rank-active')
 
-        topBtn.classList.add('active');
-
+        topBtn.classList.add('rank-active');
     } 
 
     if(e.target === jungleBtn) {
-        topBtn.classList.remove('active');
-        jungleBtn.classList.remove('active');
-        midBtn.classList.remove('active');
-        adBtn.classList.remove('active');
-        supBtn.classList.remove('active');
-        allBtn.classList.remove('active');
+        topBtn.classList.remove('rank-active');
+        jungleBtn.classList.remove('rank-active');
+        midBtn.classList.remove('rank-active');
+        adBtn.classList.remove('rank-active');
+        supBtn.classList.remove('rank-active');
+        allBtn.classList.remove('rank-active');
 
-        jungleBtn.classList.add('active');
+        jungleBtn.classList.add('rank-active');
 
     } 
     if(e.target === midBtn) {
-        topBtn.classList.remove('active');
-        jungleBtn.classList.remove('active');
-        midBtn.classList.remove('active');
-        adBtn.classList.remove('active');
-        supBtn.classList.remove('active');
-        allBtn.classList.remove('active');
+        topBtn.classList.remove('rank-active');
+        jungleBtn.classList.remove('rank-active');
+        midBtn.classList.remove('rank-active');
+        adBtn.classList.remove('rank-active');
+        supBtn.classList.remove('rank-active');
+        allBtn.classList.remove('rank-active');
 
-        midBtn.classList.add('active');
+        midBtn.classList.add('rank-active');
     }
 
     if(e.target === adBtn) {
 
-        topBtn.classList.remove('active');
-        jungleBtn.classList.remove('active');
-        midBtn.classList.remove('active');
-        adBtn.classList.remove('active');
-        supBtn.classList.remove('active');
-        allBtn.classList.remove('active');
+        topBtn.classList.remove('rank-active');
+        jungleBtn.classList.remove('rank-active');
+        midBtn.classList.remove('rank-active');
+        adBtn.classList.remove('rank-active');
+        supBtn.classList.remove('rank-active');
+        allBtn.classList.remove('rank-active');
 
-        adBtn.classList.add('active');
+        adBtn.classList.add('rank-active');
     } 
 
     if(e.target === supBtn) {
-        topBtn.classList.remove('active');
-        jungleBtn.classList.remove('active');
-        midBtn.classList.remove('active');
-        adBtn.classList.remove('active');
-        supBtn.classList.remove('active');
-        allBtn.classList.remove('active');
+        topBtn.classList.remove('rank-active');
+        jungleBtn.classList.remove('rank-active');
+        midBtn.classList.remove('rank-active');
+        adBtn.classList.remove('rank-active');
+        supBtn.classList.remove('rank-active');
+        allBtn.classList.remove('rank-active');
 
-        supBtn.classList.add('active');
+        supBtn.classList.add('rank-active');
     }
 
     if(e.target === allBtn) {
-        topBtn.classList.remove('active');
-        jungleBtn.classList.remove('active');
-        midBtn.classList.remove('active');
-        adBtn.classList.remove('active');
-        supBtn.classList.remove('active');
-        allBtn.classList.remove('active');
+        topBtn.classList.remove('rank-active');
+        jungleBtn.classList.remove('rank-active');
+        midBtn.classList.remove('rank-active');
+        adBtn.classList.remove('rank-active');
+        supBtn.classList.remove('rank-active');
+        allBtn.classList.remove('rank-active');
 
-        allBtn.classList.add('active');
+        allBtn.classList.add('rank-active');
 
     }
 })
