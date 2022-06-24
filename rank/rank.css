@@ -2,32 +2,19 @@
     font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
 }
 
-html {
+.rank-html {
     scroll-behavior: smooth;
 }
 
-body {
+.rank-body {
     position:relative;
     margin: 0;
     height: 1800px;
 }
 
-.main {
-    padding-top : 7vh;
-    width: 100vw;
-    height: 30vh;
-    background-image: url('../headerbg.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-}
 
-.main {
-    min-height: 200px;
-    width: 100%;
-}
 
-.main-content {
+.rank-main-content {
     color: #ffffff73;
     margin: auto;
     width: 70%;
@@ -35,22 +22,22 @@ body {
     padding-top: 80px;
 }
 
-.main-content-active {
+.rank-main-content-active {
     color: #fff;
     border-bottom: 2px solid #7e9bff;
 }
 
-.main-content p {
+.rank-main-content p {
     color: #354f9c;
     font-size: 20px;
     font-weight: 500;
 }
 
-.main-content-item {
+.rank-main-content-item {
     margin-right: 20px;
 }
 
-.main-input {
+.rank-main-input {
     float: right;
     width: 300px;
     height: 20px;
@@ -66,28 +53,28 @@ body {
     transition: all 200ms;
 }
 
-.main-input::placeholder {
+.rank-main-input::placeholder {
     font-weight: 500;
     color : rgba(255, 255, 255, 0.486);
 }
 
-.main-input:hover {
+.rank-main-input:hover {
     color : #353945;
     background-color: #fff;
 }
 
-.main-input:hover::placeholder {
+.rank-main-input:hover::placeholder {
     font-weight: 500;
     color : #353945;
 }
 
-.google-ad {
+.rank-google-ad {
     margin: auto;
     width: 70%;
     height: 200px;
 }
 
-.champ-rank-container {
+.rank-champ-rank-container {
     margin: auto;
     min-width: 1000px;
     width: 60%;
@@ -96,7 +83,7 @@ body {
     box-shadow: 0 4px 16px 0 rgb(126 155 255 / 60%);
 }
 
-.position {
+.rank-position {
     display: flex;
     width: 100%;
     justify-content: left;
@@ -106,15 +93,16 @@ body {
     padding: 0;
 }
 
-.active {
+.rank-active {
     color: #7e9bff;
     background-color: #f6f8ff;
     border: 1px solid #7e9bff;
     border-bottom: white;
     border-radius: 4px 4px 0px 0px;
 }
+	
 
-.position-button {
+.rank-position-button {
     cursor: pointer;
     text-align: center;
     font-size: 14px;
@@ -126,12 +114,12 @@ body {
 }
 
 
-.champ-list-tier {
+.rank-champ-list-tier {
     width: 100%;
     height: 50px;
 }
 
-.champ-list {
+.rank-champ-list {
     width: 100%;
     height: 80%;
     background-color: rgba(215,39,25,.08);
@@ -139,19 +127,19 @@ body {
     z-index: 1000;
 }
 
-.champ-list::-webkit-scrollbar {
+.rank-champ-list::-webkit-scrollbar {
     width: 5px;
 }
-.champ-list::-webkit-scrollbar-thumb {
+.rank-champ-list::-webkit-scrollbar-thumb {
     background-color:#7e9bff;
     border-radius: 10px;
     width: 3px;
 }
-.champ-list::-webkit-scrollbar-track {
+.rank-champ-list::-webkit-scrollbar-track {
     background-color: white;
 }   
 
-.list {
+.rank-list {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -159,12 +147,12 @@ body {
     padding: 8px 0px;
 }
 
-.list span {
+.rank-list span {
     position: relative;
     padding: 10px 0px;
 }
 
-.list-number::after {
+.rank-list-number::after {
     content: "";
     position: absolute;
     right: -13px;
@@ -173,13 +161,13 @@ body {
     border-right: 1px solid rgba(126,155,255,.1);
 }
 
-.list-image {
+.rank-list-image {
     border-radius: 50%;
     width: 40px;
     height: 100%;
 }
 
 
-.list:hover {
+.rank-list:hover {
     background-color: rgba(215,39,25,.4);
 }
