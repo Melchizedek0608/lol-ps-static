@@ -1,15 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import = "project_java.Y_DBmanager"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입</title>
-    <link rel="stylesheet" href="../Css/all.css">
-    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
-    <script src="../Js/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="../Css/all.css">
+<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+<script src="../Js/jquery-3.6.0.min.js"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 </head>
 <body class="member-body" style="height:1200px;">
+<%
+	Y_DBmanager y_dbmanager = new Y_DBmanager();
+	y_dbmanager.getConnection();
+%>
     <!-- 위에 navbar 부분입니다 -->
     <header class="header-mainnav">
         <div class="header-container">

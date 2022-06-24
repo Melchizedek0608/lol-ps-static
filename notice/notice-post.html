@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항-포스트</title>
     <link rel="stylesheet" href="../Css/all.css">
-    <link rel="stylesheet" href="notice.css">
-    <link rel="stylesheet" href="notice-post.css">
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <script src="../Js/jquery-3.6.0.min.js"></script>
 </head>
-<body>
+<body class="notice-body">
     <!-- 위에 navbar 부분입니다 -->
-    <header class="header-mainnav">
+    <header class="all-header-mainnav">
         <div class="header-container">
             <a href="../main/main.html">
                 <img src="../Images/header-logo.webp" alt="LOL.PS">
@@ -30,51 +29,51 @@
         </div>
     </header>
 
-    <div class="main">
-        <div class="first-title">공지사항
-       	<a class="nav-items list-up" href="notice.html">목록</a>
+    <div class="all-main">
+        <div class="notice-first-title">공지사항
+       	<a class="nav-items notice-post-list-up" href="notice.html">목록</a>
         </div>
     </div>
     
-    <main>
+    <main class="notice-main" style="margin:auto;">
            	<div class="whiteDiv"></div>
            	
-           	<div class="post-detail">
-           		<div class="title">
+           	<div class="notice-post-detail">
+           		<div class="notice-post-title">
            			패치 업데이트) 12.10 버전 한국 서버 데이터 업데이트 완료
-           			<div class="title2">
+           			<div class="notice-post-title2">
            				<span>조회 579</span>
-           				<span class="pre">     |     2022-05-25 21:28</span>
+           				<span class="notice-post-pre">     |     2022-05-25 21:28</span>
            		</div>
            	</div>
-           	<div class="content">
-           			<p class="content">안녕하세요. PS입니다.</br></br>
+           	<div class="notice-post-content">
+           			<p class="notice-post-content">안녕하세요. PS입니다.</br></br>
            			5월 25일 업데이트된 12.10 버전의 국내 데이터가 lol.ps에 적용되었습니다.</br>
-           			라인 별 챔피언 티어(티어리스트) - <a class="content-a" target='_blank' href="https://lol.ps/ko/statistics/">https://lol.ps/ko/statistics/</a></br>
-           			아이템 티어리스트 - <a class="content-a" target='_blank'  href="//lol.ps/ko/lab/#item_tier">//lol.ps/ko/lab/#item_tier</a></br>
-           			바텀 듀오 시너지 - <a class="content-a" target='_blank'  href="https://lol.ps/ko/lab/#section_duo">https://lol.ps/ko/lab/#section_duo</a></br></br>
+           			라인 별 챔피언 티어(티어리스트) - <a class="notice-post-content-a" target='_blank' href="https://lol.ps/ko/statistics/">https://lol.ps/ko/statistics/</a></br>
+           			아이템 티어리스트 - <a class="notice-post-content-a" target='_blank'  href="//lol.ps/ko/lab/#item_tier">//lol.ps/ko/lab/#item_tier</a></br>
+           			바텀 듀오 시너지 - <a class="notice-post-content-a" target='_blank'  href="https://lol.ps/ko/lab/#section_duo">https://lol.ps/ko/lab/#section_duo</a></br></br>
            			북미, 서유럽 서버의 오픈 시간 차이로 인하여, 해외 서버 오픈 후 충분한 데이터가 쌓인 후에 업데이트될 예정입니다.</br>
            			감사합니다.
            			</p>
            	</div>
-           	<div class="content-function">
-           		<a class="prev pre" href="48.html">     < 이전</a>
+           	<div class="notice-post-content-function">
+           		<a class="notice-post-prev notice-post-pre" href="48.html">     < 이전</a>
            		
-           		<div class="justify-content-start">
-           			<button class="recommend" type="button"><span class="pre">&uarr;    </span>0</button>
-           			<button class="unrecommend" type="button"><span class="pre">&darr;    </span>0</button>
+           		<div class="notice-post-justify-content-start">
+           			<button class="notice-post-recommend" type="button"><span class="notice-post-pre">&uarr;    </span>0</button>
+           			<button class="notice-post-unrecommend" type="button"><span class="notice-post-pre">&darr;    </span>0</button>
            		</div>
            		
-           		<a class="next pre" href="#a">다음 >     </a>
+           		<a class="notice-post-next notice-post-pre" href="#a">다음 >     </a>
            	</div>
         </div>
         	<div class="whiteDiv"></div>
-        	<div class="comments">
-           		<div class="comment-name">댓글쓰기</div>
-           		<textarea class="comment-space"></textarea>
-           		<button class="comment-regist" type="button">등록</button>
+        	<div class="notice-post-comments">
+           		<div class="notice-post-comment-name">댓글쓰기</div>
+           		<textarea class="notice-post-comment-space"></textarea>
+           		<button class="notice-post-comment-regist" type="button">등록</button>
            	</div>
-           	<a class="list-under" href="notice.html">목록</a>
+           	<a class="notice-post-list-under" href="notice.html">목록</a>
     </main>
 
 	<div class="top-button">
@@ -103,7 +102,8 @@
 		</div>
 
 	</footer>
-
-	<script src="../Js/all.js"></script>
+	
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="../Js/all.js"></script>
 </body>
 </html>
