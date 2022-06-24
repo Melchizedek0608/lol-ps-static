@@ -201,6 +201,35 @@ img {
     height: 75px;
 }
 
+.counter-champ {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    float: right;
+    padding-top: 30px;
+}
+
+.counter-text {
+    display: inline-block;
+    font-size: 14px;
+    width: 60px;
+    padding-top: 37px;
+    color: #ffc030;
+    font-weight: 600;
+}
+
+.counter-rate {
+    color: #FFFFFFA6;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.counter-img {
+    width: 30px;
+    height: 30px;
+    transform: translate(13px, 5px);
+}
+
 .line-and-input {
     box-sizing: content-box;
     margin: auto;
