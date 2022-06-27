@@ -206,6 +206,7 @@ if(signInForm!==null) {
 	    }
 	}
 
+
 	emailInput.change(function() {
 	    if(validationTest(emailPattern, emailInput)) {
 	        emailPtag.html("");
