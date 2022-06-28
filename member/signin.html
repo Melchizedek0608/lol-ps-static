@@ -42,10 +42,11 @@
 	                <div class = "member-row">
 	                    <div class = "member-email_login_box"> 
 	                        <h3 class="member-h3">이메일 회원 가입</h3>
-	                        <form class="member-form" name="signInForm" onsubmit="return;">
+	                        <form action = "signin.jsp" class="member-form" name="signInForm">
 	                            <div class = "member-form-group">
 	                                <label class="member-laber">이메일 주소</label>
 	                                <input type="email" name="email" class="member-form-control" placeholder="gamer@lol.ps">
+	                                <small id = "email-validate" style = "display:none" class = form-error>이미 존재하는 email 입니다.</small>
 	                                <p id="email-p"></p>
 	                            </div>
 	                            <div class = "member-form-group">
@@ -56,10 +57,12 @@
 	                            <div class = "member-form-group">
 	                                <label class="member-laber">비밀번호 확인</label>
 	                                <input type="password" name="password-confirm" class="member-form-control" placeholder="비밀번호 확인">
+	                                <small id = "pw-validate"style = "display:none" class = "form-error">비밀번호를 다시 확인하세요.</small>
 	                                <p id="password-confirm-p"></p>
 	                            </div>
 	                            <div class = "member-form-group">
 	                                <label class="member-laber">닉네임</label>
+           	                        <small id = "nickname-validate" style = "display:none" class = form-error>이미 존재하는 닉네임 입니다.</small>                         
 	                                <input type="text" name="nickname" class="member-form-control" id="nickname-input" placeholder="닉네임">
 	                            </div>
 	                            <button class="member-btn-theme member-btn-big" id="summit-button">이메일 주소로 가입</button>
