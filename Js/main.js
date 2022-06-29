@@ -1,6 +1,6 @@
 
-$('.main-small-card-image').click((e)=> {
-    console.log(e.target)
+$(document).on("click", ".main-small-card-image", function(e) {
+    
     $('.main-slide-image-small').parent().parent().css({display: 'block'})
     $('.main-swiper-wrapper').remove();
     
@@ -59,6 +59,6 @@ const swiper = new Swiper('.swiper', {
     centeredSlides: true,
     autoplay:true,
     autoplay: {
-        delay: 1000,
+        delay: 30000,
     },
 });
